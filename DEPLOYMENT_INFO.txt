@@ -1,0 +1,17 @@
+
+Bell Canada B2B API - Render Deployment Package
+Created: 2025-07-22 09:48:02
+
+📋 Deployment Instructions:
+1. Go to https://render.com and create an account
+2. Create a new Web Service
+3. Choose "Deploy from existing code"
+4. Upload all files from this folder
+5. Set build command: pip install -r requirements.txt
+6. Set start command: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+7. Add PostgreSQL database and set DATABASE_URL environment variable
+
+📖 For detailed instructions, see DEPLOYMENT_GUIDE.md
+
+🎯 Your API will be available at: https://your-app-name.onrender.com
+📚 API Documentation: https://your-app-name.onrender.com/docs
